@@ -1,0 +1,171 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000; /* Fondo negro */
+    color: #ffffcc; /* Texto en amarillo claro */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header {
+    background-color: #1a1a1a; /* Fondo del header en negro oscuro */
+    color: #ffd700; /* Texto del header en amarillo dorado */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4); /* Sombra amarilla */
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .header-logo {
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffcc; /* Texto del nav en amarillo claro */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Hover del nav en amarillo dorado */
+}
+
+/* Secciones */
+section {
+    padding: 50px 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffd700; /* Títulos en amarillo dorado */
+    font-size: 2em;
+}
+
+/* Productos */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ffd700; /* Borde en amarillo dorado */
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: #333333; /* Fondo del producto en negro grisáceo */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4); /* Sombra amarilla */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #ffffcc; /* Títulos de los productos en amarillo claro */
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #ffffcc; /* Precio del producto en amarillo claro */
+}
+
+.product button {
+    background-color: #ffd700; /* Botón en amarillo dorado */
+    color: #1a1a1a; /* Texto del botón en negro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.product button:hover {
+    background-color: #ffcc00; /* Hover del botón en amarillo fuerte */
+    color: #1a1a1a; /* Texto del hover del botón en negro */
+    transform: scale(1.05);
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6); /* Sombra más intensa al hover */
+}
+
+/* Botón eliminar en el carrito */
+.carrito button.eliminar {
+    background-color: #ff0000; /* Botón eliminar en rojo */
+    color: #ffffcc; /* Texto del botón eliminar en amarillo claro */
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.carrito button.eliminar:hover {
+    background-color: #cc0000; /* Hover del botón eliminar en rojo oscuro */
+    color: #ffffcc; /* Texto del hover del botón eliminar en amarillo claro */
+    transform: scale(1.1);
+}
+
+/* Sección de Carrito y Contacto */
+#carrito p, #contacto p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#carrito p {
+    color: #ffffcc; /* Texto del carrito en amarillo claro */
+}
+
+#contacto a {
+    color: #ffd700; /* Enlace de contacto en amarillo dorado */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+#contacto a:hover {
+    color: #ffffcc; /* Hover del enlace de contacto en amarillo claro */
+}
